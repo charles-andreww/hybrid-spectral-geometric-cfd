@@ -22,7 +22,7 @@ By combining **Geometric Routing** (via Signed Distance Fields) with **Spectral 
 Clone the repository and install the required physics and deep learning dependencies:
 
 ```bash
-git clone [https://github.com/charles-andreww/hybrid-spectral-geometric-cfd.git](https://github.com/charles-andreww/hybrid-spectral-geometric-cfd.git)
+git clone https://github.com/charles-andreww/hybrid-spectral-geometric-cfd.git
 cd hybrid-spectral-geometric-cfd
 pip install -r requirements.txt
 ```
