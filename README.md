@@ -1,6 +1,6 @@
 #  Accelerating Two-Dimensional Computational Fluid Dynamics via Hybrid Spectral-Geometric Neural Architectures
 
-[![Preprint](https://img.shields.io/badge/Preprint-Research_Square-green?style=flat-square)](https://www.researchsquare.com/article/rs-1017208/v1)
+[![Preprint](https://img.shields.io/badge/Preprint-Research_Square-green?style=flat-square)](https://www.researchsquare.com/article/rs-10172708/v1)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0000--3187--1544-A6CE39?style=flat-square&logo=orcid)](https://orcid.org/0009-0000-3187-1544)
 
 An open-source PyTorch implementation of the hybrid deep learning architecture designed to accelerate 2D fluid dynamics simulations over highly irregular boundaries. 
