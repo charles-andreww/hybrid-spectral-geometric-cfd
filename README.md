@@ -47,6 +47,23 @@ print(f"Loaded jagged obstacle geometry with shape: {sdf_matrix.shape}")
 ```
 **Full Dataset Archive**: The complete set of 3,000 highly resolved simulation files used to train this network is openly hosted at: https://huggingface.co/datasets/Charles-Andrew/hybrid-spectral-geometric-cfd.
 
+# Benchmarks
+Evaluated on zero-shot, randomly generated
+complex geometries, the proposed architecture achieves a 414.9x acceleration over
+traditional Navier-Stokes solvers, reducing inference time to 17.86 milliseconds on
+local hardware while preserving 99.05% physical accuracy.
+<p align="center">
+  <img src="assets/benchmark_metrics1.png" alt="Inference Speed and Error Comparison" width="80%">
+</p>
+
+#  Extreme  Stress Testing
+To test the boundaries of the hybrid architecture, the model was subjected to zero-shot evaluation against hyper-complex, randomized obstacles featuring up to 3,000 geometric spikes on a 64x64 grid. 
+
+While traditional iterative solvers (Phi-Flow) scale exponentially with boundary complexity—ballooning execution time to **395.26 seconds** due to ill-conditioned matrices—the hybrid neural network preserves a flat, constant inference cost of **3.9 milliseconds**. This represents an acceleration factor of **101,348.7x** while maintaining a physical fidelity of **0.0166 MSE** (98.6%).
+<p align="center">
+  <img src="assets/benchmark_metrics2.png" alt="Inference Speed and Error Comparison" width="80%">
+</p>
+
 ## Citation
 ```
 Angulo Rosales, Carlos Andrés. (2026). Accelerating Two-Dimensional Computational Fluid Dynamics via Hybrid Spectral-Geometric Neural Architectures. 10.21203/rs.3.rs-10172708/v1. 
