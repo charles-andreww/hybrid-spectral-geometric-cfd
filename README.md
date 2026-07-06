@@ -57,11 +57,11 @@ local hardware while preserving 99.05% physical accuracy.
 </p>
 
 #  Extreme  Stress Testing
-To test the boundaries of the hybrid architecture, the model was subjected to zero-shot evaluation against hyper-complex, randomized obstacles featuring up to 3,000 geometric spikes on a 64x64 grid. 
+To test the boundaries of the hybrid architecture, the model was subjected to zero-shot evaluation against hyper-complex, randomized obstacles featuring up to 10,000 geometric spikes on a 64x64 grid. 
 
-While traditional iterative solvers (Phi-Flow) scale exponentially with boundary complexity—ballooning execution time to **395.26 seconds** due to ill-conditioned matrices—the hybrid neural network preserves a flat, constant inference cost of **3.9 milliseconds**. This represents an acceleration factor of **101,348.7x** while maintaining a physical fidelity of **0.0166 MSE** (98.6%).
+While traditional iterative solvers (Phi-Flow) scale exponentially with boundary complexity—ballooning execution time to **395.26 seconds** due to ill-conditioned matrices—the hybrid neural network preserves a flat, constant inference cost of **3.9 milliseconds**. This represents an acceleration factor of **330,693.9x** while maintaining a physical fidelity of **0.0159 MSE** (98.61%).
 <p align="center">
-  <img src="assets/benchmark_metrics2.png" alt="Inference Speed and Error Comparison" width="80%">
+  <img src="assets/download.png" alt="Inference Speed and Error Comparison" width="80%">
 </p>
 
 ## Citation
